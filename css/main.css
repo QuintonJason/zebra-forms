@@ -1,4 +1,31 @@
 /* Place CSS styles here */
+.zebra-forms-main {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+.zebra-forms-pop-up {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: papayawhip;
+}
+
+.form-submitted .zebra-forms-pop-up {
+    display: flex;
+}
+
+.form-submitted {
+    background-color: peachpuff;
+}
+
 label {
     display: block;
     margin-bottom: 4px;
@@ -10,7 +37,9 @@ input {
 }
 
 form {
-    border: 1px solid black;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 6px 0px #808080;
 }
 
 .logo {
