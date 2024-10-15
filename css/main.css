@@ -79,9 +79,22 @@ img {
 }
 
 @media (min-width: 800px) {
-    .zebra-forms-items {
-        flex-direction: row
-    }
+  .zebra-forms-items {
+      flex-direction: row
+  }
+}
+
+.zebra-forms-items-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 800px) {
+  .zebra-forms-items-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .zebra-forms-item {
