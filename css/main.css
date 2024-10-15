@@ -80,7 +80,7 @@ img {
 
 @media (min-width: 800px) {
   .zebra-forms-items {
-      flex-direction: row
+      flex-direction: row;
   }
 }
 
@@ -103,13 +103,6 @@ img {
     padding: 20px;
 }
 
-.third-image {
-  /* width: 200px;
-  position: absolute;
-  top: 0;
-  /* left: 0; */
-  right: 200px; */
-}
 
 .zebra-forms-pop-up {
     display: none;
@@ -162,3 +155,24 @@ form {
         flex-direction: row;
     }
 }
+
+/* GALLERY PAGE */
+.zebra-forms-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+/* END GALLERY PAGE */
+
+
+/* THANK YOU PAGE */
+.zebra-forms-thank-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 88vh;
+}
+
+/* END THANK YOU PAGE */
